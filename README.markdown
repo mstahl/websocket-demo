@@ -7,16 +7,17 @@ multiple rooms, that uses websockets and EventMachine to do its thing.
 
 You'll need the following gems installed to make it happen:
 
-* sinatra
-* haml
-* eventmachine
-* em-websocket
-* json
+* [sinatra](http://www.sinatrarb.com/)
+* [haml](http://haml-lang.com/)
+* [eventmachine](http://rubyeventmachine.com/)
+* [em-websocket](http://github.com/igrigorik/em-websocket)
+* [json](http://flori.github.com/json/)
 
 And you'll need a web browser that supports websockets, which is either the
 development version of Chrome/Chromium, the development version of
 Safari/Webkit, or some really obscure version of Firefox with an experimental
-patch or something.
+patch or something. *Note:* I have only tested this in Chrome 5.0.342.9 beta
+in Mac OS X.
 
 ## Usage
 
