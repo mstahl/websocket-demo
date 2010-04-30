@@ -1,0 +1,19 @@
+!!!5
+%html
+  %head
+    %title Home
+    %style
+      :sass
+        .error
+          color: red
+    %script{:src => "http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"}
+    :javascript
+      var room = '#{@room}';
+    %script{:src => "/scripts/application.js"}
+  %body{:onunload => "close_connection();"}
+    %h1#the-title Websocket Test
+    %p Enter something in the text field below.
+    %form#the-form
+      %input#the-input{:type => "text"}
+      %input#submit{:type => "submit"}
+    #messages
